@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Barlow';
-    src: url('./assets/fonts/Barlow-ExtraLight.ttf')
+    src: url('assets/fonts/Barlow-ExtraLight.ttf')
 }
 
 @font-face {
     font-family: 'Barlow Bold';
-    src: url('./assets/fonts/Barlow-Bold.ttf')
+    src: url('assets/fonts/Barlow-Bold.ttf')
 }
 
 @font-face {
     font-family: 'October Twilight';
-    src: url('./assets/fonts/October-Twilight.ttf')
+    src: url('assets/fonts/October-Twilight.ttf')
 }
 
 
@@ -23,7 +23,7 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
 .menu{/*padroniza o tamanho, alura, cor e posição do menu*/
     width: 100%;
     height: 100px;
-    background-color: rgba(17, 39, 7, 0.76);
+    background-color: rgba(3, 39, 8, 0.76);
     position: absolute;
 
 }
@@ -36,7 +36,7 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
 } 
 .menu_img{/*padroniza as definições da imagem da logo*/
     
-    background-image: url(./assets/img/agoravai.png);
+    background-image: url(assets/img/agoravai.png);
     background-repeat: no-repeat;
     width:105px;
     height:125px;
@@ -53,7 +53,7 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
 .menu_desktop ul{/*determina o formato da lista*/
     list-style: none;
     position: absolute;
-    margin-left: 359px;
+    margin-left: 700px;
     margin-top: -100px;
     white-space: nowrap; /*n deixa o menu desconfigurar*/
     
@@ -76,14 +76,13 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
 }
 
 
-
 .content__1{/*tamanho do content1*/
     width: 100%;
 }
 .content__1-img{/*determina o tamanho, proporção, posição e alinhamento dos itens que estão dentro do banner.*/
     padding-top: 0px;
-    height: 500px;
-    background-image: url(./assets/img/mountain-1149897_1920.jpg);
+    height: 600px;
+    background-image: url(assets/img/mountain-1149897_1920.jpg);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -94,23 +93,38 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
 }
 .content__1-title1{/*padroniza o título 1 do banner-montanha*/
     font-family: 'Barlow';
-    color: rgb(250, 233, 233);
-    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-top: 20px;
     
 }
 .content__1-title2{/*padroniza o título 2 do banner-montanha*/
     font-family: 'Lobster', cursive;
     color: rgb(255, 255, 255);
-    font-size: 50px;
-    margin-top: 30px;
+    font-size: 70px;
+    margin-top: 77px;
 }
 .content__1-button{/*determina a posição e as configurações estéticas do botão*/
     position: absolute;
-    margin-top: 350px;
+    margin-top: 420px;
     padding: 10px;
-    background-color: rgba(24, 56, 21, 0.87);
+    background-color: rgba(7, 70, 35, 0.87);
     color: rgb(255, 255, 255);
-    border: 2px solid #ffffff;
+    border: 2px solid #bebebe;
     
     font-size: 20px;
+}
+
+.content__2{
+    width: 100%;
+    height: 330px;
+    background-color: rgb(99, 34, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h2{
+    font-family: 'Barlow';
+    color: bisque;
 }
