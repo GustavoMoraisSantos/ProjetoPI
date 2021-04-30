@@ -117,18 +117,39 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
 
 .content__2{
     width: 100%;
-    height: 330px;
-    background-color: rgb(99, 34, 14);
+    height: 420px;
+    background-color: rgb(15, 24, 6);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.h2{
-    font-family: 'Barlow';
-    color: bisque;
+h2{
+    font-family: 'Barlow Bold';
+    color: rgb(243, 233, 221);
+    position: relative;
+    margin-top: -120px;
+    font-size: 40px;
+    margin-left: 200px;
+}
+.lorem{
+    color: white;
+}
+.read_more{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 270px;
+    padding: 10px;
+    background-color: rgba(7, 70, 35, 0.87);
+    color: rgb(255, 255, 255);
+    border: 2px solid #bebebe;
+    
+    font-size: 20px
 }
 
+
+
+/* CASSOL */
 .rodape{
     width: 100%;
     height: 250px;
