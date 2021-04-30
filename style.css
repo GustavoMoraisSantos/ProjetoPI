@@ -160,11 +160,12 @@ h2{
 
 #divlogorodape{
     float: left;
-}
-
-#logorodape{
-    float: left;
-    height: 230px;
+    height: 300px;
+    width: 200px;
+    margin-right: 40px;
+    background-image: url(assets/img/logobranca.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
 }
 
 .rodape_items_1{
@@ -221,8 +222,8 @@ h2{
     margin-right: 75px;
 }
 
-.rodape_endereco{
-    margin-top: 3%;
+.rodape_social{
+    margin-top: 5%;
     color: #eeeeee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: left;
@@ -235,4 +236,49 @@ h2{
 .li_contato{
     list-style: none;
     line-height: 1.7;
+}
+
+.redes_sociais{
+    float: left;
+    margin-left: 30px;
+}
+
+#twitter{
+    float: left;
+    margin-right: 20px;
+    height: 32px;
+    width: 32px;
+    background-image: url(assets/img/twitter_quentao.png);
+    background-size: 32px;
+}
+
+#twitter:hover{
+    float: left;
+    height: 32px;
+    width: 32px;
+    background-image: url(assets/img/twitter.png);
+    background-size: 32px;
+}
+
+#instragram{
+    margin-right: 20px;
+    float: left;
+    height: 32px;
+    width: 32px;
+    background-image: url(assets/img/instagram_quentao.png);
+}
+
+#instragram:hover{
+    background-image: url(assets/img/instagram.png);
+}
+
+#youtube{
+    float: left;
+    height: 32px;
+    width: 32px;
+    background-image: url(assets/img/youtube_quentao.png);
+}
+
+#youtube:hover{
+    background-image: url(assets/img/youtube.png);
 }
