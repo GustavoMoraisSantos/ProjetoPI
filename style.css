@@ -30,18 +30,20 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
 .menu_logo{/*padroniza apenas as definições da escrita da logo*/
     color: beige;
     position: absolute;
-    margin-top: 60px;
-    margin-left: 80px;
+    font-size: 25px;
+    margin-top: 68px;
+    margin-left: 150px;
     font-family: 'Lora', serif;
 } 
 .menu_img{/*padroniza as definições da imagem da logo*/
     
-    background-image: url(assets/img/agoravai.png);
+    background-image: url(assets/img/logobranca.png);
     background-repeat: no-repeat;
-    width:105px;
-    height:125px;
+    background-size: 230px;
+    width: 350px;
+    height:500px;
     position: relative;
-    margin-top: 10px;
+    margin-top: -42px;
 }
 .menu_desktop{/*determina o tamanho da fonte e o tamanho das utilidades do menu*/
     display:flex ;
@@ -54,7 +56,7 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
     list-style: none;
     position: absolute;
     margin-left: 700px;
-    margin-top: -100px;
+    margin-top: -420px;
     white-space: nowrap; /*n deixa o menu desconfigurar*/
     
     
@@ -73,6 +75,9 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
     color: #eeeeee;
     
     
+}
+.menu_desktop ul li a:hover{
+    color: #c4953e;
 }
 
 
@@ -146,7 +151,6 @@ h2{
     
     font-size: 20px
 }
-
 
 
 /* CASSOL */
