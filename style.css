@@ -116,8 +116,11 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
     background-color: rgba(7, 70, 35, 0.87);
     color: rgb(255, 255, 255);
     border: 2px solid #bebebe;
-    
     font-size: 20px;
+}
+.content__1-button:hover{ /*muda a cor do botão quando passa o mouse em cima*/
+    color: #c4953e;
+    border: 2px solid  #c4953e;
 }
 
 .content__2{
@@ -131,25 +134,31 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
 }
 h2{
     font-family: 'Barlow Bold';
-    color: rgb(243, 233, 221);
+    color: rgb(255, 255, 255);
     position: relative;
     margin-top: -120px;
     font-size: 40px;
-    margin-left: 200px;
+    margin-left: 120px;
 }
-.lorem{
+.text_content2{
     color: white;
+    font-size: 20px;
+    margin-right: -100px;
 }
-.read_more{
+.read_more{/*define estilo do botão read more*/
     position: absolute;
     margin-top: 30px;
-    margin-left: 270px;
+    margin-left: 180px;
     padding: 10px;
     background-color: rgba(7, 70, 35, 0.87);
     color: rgb(255, 255, 255);
     border: 2px solid #bebebe;
     
     font-size: 20px
+}
+.read_more:hover{/*muda a cor do botão quando passa o mouse em cima*/
+    color: #c4953e;
+    border: 2px solid  #c4953e;
 }
 
 
@@ -159,8 +168,7 @@ h2{
     height: 250px;
     background-color: rgba(1, 17, 3);    
 }
-.rodape_content{
-}
+
 
 #divlogorodape{
     float: left;
