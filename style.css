@@ -19,6 +19,7 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
     margin: 0px;
     background-color: #FFFFFF;
     height: 2000px; 
+    margin: 0px;
 }
 .menu{/*padroniza o tamanho, alura, cor e posição do menu*/
     width: 100%;
@@ -50,11 +51,12 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
     width: 100%;
     height: 54px;
     font-size: 23px;
+    flex-direction: row;
     
 }
 .menu_desktop ul{/*determina o formato da lista*/
     list-style: none;
-    position: absolute;
+    position: relative;
     margin-left: 700px;
     margin-top: -420px;
     white-space: nowrap; /*n deixa o menu desconfigurar*/
@@ -162,20 +164,51 @@ body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*
 }
 
 .content__3{
-    background-color: #040c00;
+   
+    display: flex;
+   
     width: 100%;
-    height: 300px;
-    padding-top: 10px;
+    height: max-content;
+    margin-bottom: -5px;
+   
 }
+
+
 
 .h2__content3{
     font-family: 'Barlow Bold';
     color: rgb(255, 255, 255);
     position: relative;
-    margin-top: -10px;
+    margin-top: 40px;
     font-size: 40px;
-    margin-left: 120px;
+    margin-left: 820px;
+
 }
+.fundo__content3{
+    background-image: url(assets/img/bonito.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.sobre__content3{
+    background-image: url(assets/img/sale.png);
+    size: 100%;
+    width: 100%;
+    height: 350px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 710px;
+    opacity: 90%;
+        
+}/*PRA DEIXAR BONITO IGUAL TAVA NO CANVA TEM QUE COLOCAR UMA SPAN COM UM RETANGULO, DEFINIR A OPACITY E LANÇAR AS OUTRAS IMAGENS COM OS TEXTOS EM CIMA.
+falta arrumar as responsividades das imagens e das divs
+*/
 
 /* CASSOL */
 .rodape{
