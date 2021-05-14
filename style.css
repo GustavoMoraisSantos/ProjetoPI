@@ -13,332 +13,376 @@
     src: url('assets/fonts/October-Twilight.ttf')
 }
 
-
-body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*/
-    font-family: 'Barlow';
-    margin: 0px;
-    background-color: #FFFFFF;
-    height: 2000px; 
-    margin: 0px;
-}
-.menu{/*padroniza o tamanho, alura, cor e posição do menu*/
-    width: 100%;
-    height: 100px;
-    background-color: rgba(3, 39, 8, 0.76);
-    position: absolute;
-
-}
-.menu_logo{/*padroniza apenas as definições da escrita da logo*/
-    color: beige;
-    position: absolute;
-    font-size: 25px;
-    margin-top: 68px;
-    margin-left: 150px;
-    font-family: 'Lora', serif;
-} 
-.menu_img{/*padroniza as definições da imagem da logo*/
-    
-    background-image: url(assets/img/logobranca.png);
-    background-repeat: no-repeat;
-    background-size: 230px;
-    width: 350px;
-    height:500px;
-    position: relative;
-    margin-top: -42px;
-}
-.menu_desktop{/*determina o tamanho da fonte e o tamanho das utilidades do menu*/
-    display:flex ;
-    width: 100%;
-    height: 54px;
-    font-size: 23px;
-    flex-direction: row;
-    
-}
-.menu_desktop ul{/*determina o formato da lista*/
-    list-style: none;
-    position: relative;
-    margin-left: 700px;
-    margin-top: -420px;
-    white-space: nowrap; /*n deixa o menu desconfigurar*/
-    
-    
-    
-}
-.menu_desktop ul li{/*determina o formato da lista com base nas linhas*/
-    display: inline;
-    padding-left: 24px ;
-    position: relative;
-    white-space: nowrap;/*mantém frases compostas na mesma linha- "sobre nós"*/
-    
-   
-}
-.menu_desktop ul li a{/*determina a cor e tira as características padrões de links*/
-    text-decoration: none;
-    color: #eeeeee;
-    
-    
-}
-.menu_desktop ul li a:hover{
-    color: #c4953e;
-}
+@media screen and (min-width:1024px){
 
 
-.content__1{/*tamanho do content1*/
-    width: 100%;
-}
-.content__1-img{/*determina o tamanho, proporção, posição e alinhamento dos itens que estão dentro do banner.*/
-    padding-top: 0px;
-    height: 600px;
-    background-image: url(assets/img/mountain-1149897_1920.jpg);
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: 1700px;
-    width: 100%;
-}
-.content__1-title1{/*padroniza o título 1 do banner-montanha*/
-    font-family: 'Barlow';
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    margin-top: 20px;
-    
-}
-.content__1-title2{/*padroniza o título 2 do banner-montanha*/
-    font-family: 'Lobster', cursive;
-    color: rgb(255, 255, 255);
-    font-size: 70px;
-    margin-top: 77px;
-}
-.content__1-button{/*determina a posição e as configurações estéticas do botão*/
-    position: absolute;
-    margin-top: 420px;
-    padding: 10px;
-    background-color: rgba(7, 70, 35, 0.87);
-    color: rgb(255, 255, 255);
-    border: 2px solid #bebebe;
-    font-size: 20px;
-}
-.content__1-button:hover{ /*muda a cor do botão quando passa o mouse em cima*/
-    color: #c4953e;
-    border: 2px solid  #c4953e;
-}
+    /*teste nav*/
+        nav{
+            background-color: rgba(17, 68, 28, 0.685);
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            margin-top: 0px;
+            display: flex;
+        }
 
-.content__2{/*define a cor e o alinhamento dos conteúdos, Semi-responsivo*/
-    width: 100%;
-    height: 420px;
-    background-color: rgb(15, 24, 6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.h2__content2{/*define os padrões dos títulos de cada conteúdo*/
-    font-family: 'Barlow Bold';
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin-top: -120px;
-    font-size: 40px;
-    margin-left: 120px;
-}
-.text_content2{/*define as coisas de "nossa história"*/
-    color: white;
-    font-size: 20px;
-    margin-right: -100px;
-}
-.read_more{/*define estilo do botão read more*/
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 180px;
-    padding: 10px;
-    background-color: rgba(7, 70, 35, 0.87);
-    color: rgb(255, 255, 255);
-    border: 2px solid #bebebe;
-    
-    font-size: 20px
-}
-.read_more:hover{/*muda a cor do botão quando passa o mouse em cima*/
-    color: #c4953e;
-    border: 2px solid  #c4953e;
-}
-
-.content__3{
-   
-    display: flex;
-   
-    width: 100%;
-    height: max-content;
-    margin-bottom: -5px;
-   
-}
+        .menu1{
+            margin-top: 33px;
+            margin-left: 600px;
+            display: block ;
+            
+            
+            
+        }
+        .menu1 a{
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 20px;
+            font-size: 23px;
+            flex-direction: row;
+            white-space: nowrap;
+            display: inline;
+          
+        }
+        .menu1 a label{
+            display: inline-block;
+            position: relative;
+            flex-shrink: inherit;
+        }
 
 
-
-.h2__content3{
-    font-family: 'Barlow Bold';
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin-top: 40px;
-    font-size: 40px;
-    margin-left: 820px;
-
-}
-.fundo__content3{
-    background-image: url(assets/img/bonito.jpg);
-    width: 100%;
-    height: 500px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-.sobre__content3{
-    background-image: url(assets/img/sale.png);
-    size: 100%;
-    width: 100%;
-    height: 350px;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 710px;
-    opacity: 90%;
+    body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*/
+        font-family: 'Barlow';
         
-}/*PRA DEIXAR BONITO IGUAL TAVA NO CANVA TEM QUE COLOCAR UMA SPAN COM UM RETANGULO, DEFINIR A OPACITY E LANÇAR AS OUTRAS IMAGENS COM OS TEXTOS EM CIMA.
-falta arrumar as responsividades das imagens e das divs
-*/
+        background-color: #FFFFFF;
+        height: 2000px; 
+        margin: 0px;
+    }
+    .menu{/*padroniza o tamanho, alura, cor e posição do menu*/
+        width: 100%;
+        height: 100px;
+        background-color: rgba(3, 39, 8, 0.76);
+        position: absolute;
+        display: flex;
 
-/* CASSOL */
-.rodape{
-    width: 100%;
-    height: 250px;
-    background-color: rgba(1, 17, 3);    
-}
+    }
+    .menu_logo{/*padroniza apenas as definições da escrita da logo*/
+        color: beige;
+        position: relative;
+        font-size: 25px;
+        margin-top: 68px;
+        margin-left: 150px;
+        font-family: 'Lora', serif;
+    } 
+    .menu_img{/*padroniza as definições da imagem da logo*/
+        
+        background-image: url(assets/img/logobranca.png);
+        background-repeat: no-repeat;
+        background-size: 230px;
+        width: 750px;
+        height:500px;
+        position: absolute;
+        margin-top: -42px;
+        margin-left: 0px;
+    }
+    .menu_desktop{/*determina o tamanho da fonte e o tamanho das utilidades do menu*/
+        display:flex ;
+        width: 100%;
+        height: 54px;
+        font-size: 23px;
+        
+        
+    }
+    .menu_desktop ul{/*determina o formato da lista*/
+        list-style: none;
+        margin-left: 500px;
+        margin-top: 30px;
+        /* white-space: nowrap; /*n deixa o menu desconfigurar*/
+        flex-direction: row;/*Se eu tiro o nowrap, ele fica responsivo mas Quem somos quebra de linha. Se eu deixo, ele deixa de se ajustar*/
+
+        white-space: nowrap;/*parece um position absolute*/
+        display: flex;
+        
+        
+        
+    }
+    .menu_desktop ul li{/*determina o formato da lista com base nas linhas*/
+        display: inline-block;
+        padding-left: 24px ;
+        position: relative;
+       
+        
+    
+    }
+    .menu_desktop ul li a{/*determina a cor e tira as características padrões de links*/
+        text-decoration: none;
+        color: #eeeeee;
+        
+        
+    }
+    .menu_desktop ul li a:hover{
+        color: #c4953e;
+    }
 
 
-#divlogorodape{
-    float: left;
-    height: 300px;
-    width: 200px;
-    margin-right: 40px;
-    background-image: url(assets/img/logobranca.png);
-    background-repeat: no-repeat;
-    background-size: 250px;
-}
+    .content__1{/*tamanho do content1*/
+        width: 100%;
+    }
+    .content__1-img{/*determina o tamanho, proporção, posição e alinhamento dos itens que estão dentro do banner.*/
+        padding-top: 0px;
+        height: 600px;
+        background-image: url(assets/img/mountain-1149897_1920.jpg);
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: 1700px;
+        width: 100%;
+    }
+    .content__1-title1{/*padroniza o título 1 do banner-montanha*/
+        font-family: 'Barlow';
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        margin-top: 20px;
+        
+    }
+    .content__1-title2{/*padroniza o título 2 do banner-montanha*/
+        font-family: 'Lobster', cursive;
+        color: rgb(255, 255, 255);
+        font-size: 70px;
+        margin-top: 77px;
+    }
+    .content__1-button{/*determina a posição e as configurações estéticas do botão*/
+        position: absolute;
+        margin-top: 420px;
+        padding: 10px;
+        background-color: rgba(7, 70, 35, 0.87);
+        color: rgb(255, 255, 255);
+        border: 2px solid #bebebe;
+        font-size: 20px;
+    }
+    .content__1-button:hover{ /*muda a cor do botão quando passa o mouse em cima*/
+        color: #c4953e;
+        border: 2px solid  #c4953e;
+    }
 
-.rodape_items_1{
-    float: left;
-    margin-top: 15px;
-    margin-left: 4%;
-}
+    .content__2{/*define a cor e o alinhamento dos conteúdos, Semi-responsivo*/
+        width: 100%;
+        height: 420px;
+        background-color: rgb(15, 24, 6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .h2__content2{/*define os padrões dos títulos de cada conteúdo*/
+        font-family: 'Barlow Bold';
+        color: rgb(255, 255, 255);
+        position: relative;
+        margin-top: -120px;
+        font-size: 40px;
+        margin-left: 120px;
+    }
+    .text_content2{/*define as coisas de "nossa história"*/
+        color: white;
+        font-size: 20px;
+        margin-right: -100px;
+    }
+    .read_more{/*define estilo do botão read more*/
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 180px;
+        padding: 10px;
+        background-color: rgba(7, 70, 35, 0.87);
+        color: rgb(255, 255, 255);
+        border: 2px solid #bebebe;
+        
+        font-size: 20px
+    }
+    .read_more:hover{/*muda a cor do botão quando passa o mouse em cima*/
+        color: #c4953e;
+        border: 2px solid  #c4953e;
+    }
 
-#rodape_separador{
-    margin-top: 25%;
-    margin-left: -40px;
-    float: left;
-    background-color: #eeeeee;
-    border-radius: 3px;
-    height: 20px;
-    width: 3px;
-}
+    .content__3{
+    
+        display: flex;
+    
+        width: 100%;
+    
+        margin-bottom: -5px;
+    
+    }
 
-#rodapeinfo{
-    margin-left: -40px;
-    text-decoration: none;
-    margin-top: 3%;
-    color: #eeeeee;
-    float: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-.listainfo{
-    list-style: none;
-    outline: none;
-    text-decoration: none;
-    line-height: 1.6;
-}
 
-.li_listainfo{
-    color: #eeeeee;
-    text-decoration: none;
-}
+    .h2__content3{
+        font-family: 'Barlow Bold';
+        color: rgb(255, 255, 255);
+        position: relative;
+        margin-top: 40px;
+        font-size: 40px;
+        margin-left: 820px;
 
-.li_listainfo:hover{
-    color:#c4953e;
-}
+    }
+    .fundo__content3{
+        background-image: url(assets/img/bonito.jpg);
+        width: 100%;
+        height: 500px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .sobre__content3{
+        background-image: url(assets/img/sale.png);
+        size: 100%;
+        width: 100%;
+        height: 350px;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        position: relative;
+       
+        opacity: 90%;
+        display: flex;
+            
+    }/*PRA DEIXAR BONITO IGUAL TAVA NO CANVA TEM QUE COLOCAR UMA SPAN COM UM RETANGULO, DEFINIR A OPACITY E LANÇAR AS OUTRAS IMAGENS COM OS TEXTOS EM CIMA.
+    falta arrumar as responsividades das imagens e das divs
+    */
 
-.rodape_items_2{
-    float: left;
-    margin-left: 100px;
-}
+    /* CASSOL */
+    .rodape{
+        width: 100%;
+        height: 250px;
+        background-color: rgba(1, 17, 3);    
+    }
 
-.rodape_contato{
-    margin-top: 5%;
-    color: #eeeeee;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    float: left;
-    margin-right: 75px;
-}
 
-.rodape_social{
-    margin-top: 5%;
-    color: #eeeeee;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    float: left;
-}
+    #divlogorodape{
+        float: left;
+        height: 300px;
+        width: 200px;
+        margin-right: 40px;
+        background-image: url(assets/img/logobranca.png);
+        background-repeat: no-repeat;
+        background-size: 250px;
+    }
 
-#mapa{
-    float: left;
-}
+    .rodape_items_1{
+        float: left;
+        margin-top: 15px;
+        margin-left: 4%;
+    }
 
-.li_contato{
-    list-style: none;
-    line-height: 1.7;
-}
+    #rodape_separador{
+        margin-top: 25%;
+        margin-left: -40px;
+        float: left;
+        background-color: #eeeeee;
+        border-radius: 3px;
+        height: 20px;
+        width: 3px;
+    }
 
-.redes_sociais{
-    float: left;
-    margin-left: 30px;
-}
+    #rodapeinfo{
+        margin-left: -40px;
+        text-decoration: none;
+        margin-top: 3%;
+        color: #eeeeee;
+        float: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
-#twitter{
-    float: left;
-    margin-right: 20px;
-    height: 32px;
-    width: 32px;
-    background-image: url(assets/img/twitter_quentao.png);
-    background-size: 32px;
-}
+    .listainfo{
+        list-style: none;
+        outline: none;
+        text-decoration: none;
+        line-height: 1.6;
+    }
 
-#twitter:hover{
-    float: left;
-    height: 32px;
-    width: 32px;
-    background-image: url(assets/img/twitter.png);
-    background-size: 32px;
-}
+    .li_listainfo{
+        color: #eeeeee;
+        text-decoration: none;
+    }
 
-#instragram{
-    margin-right: 20px;
-    float: left;
-    height: 32px;
-    width: 32px;
-    background-image: url(assets/img/instagram_quentao.png);
-}
+    .li_listainfo:hover{
+        color:#c4953e;
+    }
 
-#instragram:hover{
-    background-image: url(assets/img/instagram.png);
-}
+    .rodape_items_2{
+        float: left;
+        margin-left: 100px;
+    }
 
-#youtube{
-    float: left;
-    height: 32px;
-    width: 32px;
-    background-image: url(assets/img/youtube_quentao.png);
-}
+    .rodape_contato{
+        margin-top: 5%;
+        color: #eeeeee;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        float: left;
+        margin-right: 75px;
+    }
 
-#youtube:hover{
-    background-image: url(assets/img/youtube.png);
+    .rodape_social{
+        margin-top: 5%;
+        color: #eeeeee;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        float: left;
+    }
+
+    #mapa{
+        float: left;
+    }
+
+    .li_contato{
+        list-style: none;
+        line-height: 1.7;
+    }
+
+    .redes_sociais{
+        float: left;
+        margin-left: 30px;
+    }
+
+    #twitter{
+        float: left;
+        margin-right: 20px;
+        height: 32px;
+        width: 32px;
+        background-image: url(assets/img/twitter_quentao.png);
+        background-size: 32px;
+    }
+
+    #twitter:hover{
+        float: left;
+        height: 32px;
+        width: 32px;
+        background-image: url(assets/img/twitter.png);
+        background-size: 32px;
+    }
+
+    #instragram{
+        margin-right: 20px;
+        float: left;
+        height: 32px;
+        width: 32px;
+        background-image: url(assets/img/instagram_quentao.png);
+    }
+
+    #instragram:hover{
+        background-image: url(assets/img/instagram.png);
+    }
+
+    #youtube{
+        float: left;
+        height: 32px;
+        width: 32px;
+        background-image: url(assets/img/youtube_quentao.png);
+    }
+
+    #youtube:hover{
+        background-image: url(assets/img/youtube.png);
+    }
 }
