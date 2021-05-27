@@ -386,3 +386,70 @@
         background-image: url(assets/img/youtube.png);
     }
 }
+
+
+
+/*TESTE*/
+/* GERAIS */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.row{
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+p, li{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+
+/* Barra de navegação */
+header, .navbar{
+    background-color: #353D41;
+}
+
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo{
+    width: 125px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -20px;
+}
+.escrita{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -10px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+#navbar-links a{
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem; /*elemento root*/
+}
+
+.tamanho{
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+}
