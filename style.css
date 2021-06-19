@@ -54,7 +54,7 @@
     body {/*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*/
         font-family: 'Barlow';
         
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         height: 2000px; 
         margin: 0px;
     }
@@ -478,7 +478,7 @@ header, .navbar{
 }
 
 #main-btn { /*Definições dos botões do slider*/
-    background-color: rgb(7, 49, 7);
+    background-color: rgba(27, 56, 27, 0.959);
     color: rgb(250, 250, 250);
     text-transform: uppercase;
     width: 200px;
@@ -495,3 +495,14 @@ header, .navbar{
     border-color: rgb(41, 80, 39);
 }
 
+.testecor{
+    background-color: rgba(18, 49, 6, 0.452);
+}
+
+.testecor2{
+    background-color: rgba(11, 66, 68, 0.541);
+}
+
+.testecor3{
+    background-color: rgba(4, 66, 53, 0.575);
+}
