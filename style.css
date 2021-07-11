@@ -1,510 +1,690 @@
-@font-face {
-    font-family: 'Barlow';
-    src: url('assets/fonts/Barlow-ExtraLight.ttf')
-}
-
-@font-face {
-    font-family: 'Barlow Bold';
-    src: url('assets/fonts/Barlow-Bold.ttf')
-}
-
-@font-face {
-    font-family: 'October Twilight';
-    src: url('assets/fonts/October-Twilight.ttf')
-}
-
-
-/*@media screen and (min-width:1024px){
-
-
-    /*teste nav*/
-
-nav {
-    background-color: rgba(17, 68, 28, 0.685);
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    margin-top: 0px;
-    display: flex;
-}
-
-.menu1 {
-    margin-top: 33px;
-    margin-left: 600px;
-    display: block;
-}
-
-.menu1 a {
-    text-decoration: none;
-    color: whitesmoke;
-    padding: 20px;
-    font-size: 23px;
-    flex-direction: row;
-    white-space: nowrap;
-    display: inline;
-}
-
-.menu1 a label {
-    display: inline-block;
-    position: relative;
-    flex-shrink: inherit;
-}
-
-body {
-    /*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*/
-    font-family: 'Barlow';
-    background-color: #ffffff;
-    margin: 0px;
-}
-
-.menu {
-    /*padroniza o tamanho, alura, cor e posição do menu*/
-    width: 100%;
-    height: 100px;
-    background-color: rgba(3, 39, 8, 0.76);
-    position: absolute;
-    display: flex;
-}
-
-.menu_logo {
-    /*padroniza apenas as definições da escrita da logo*/
-    color: beige;
-    position: relative;
-    font-size: 25px;
-    margin-top: 68px;
-    margin-left: 150px;
-    font-family: 'Lora', serif;
-}
-
-.menu_img {
-    /*padroniza as definições da imagem da logo*/
-    background-image: url(assets/img/logobranca.png);
-    background-repeat: no-repeat;
-    background-size: 230px;
-    width: 750px;
-    height: 500px;
-    position: absolute;
-    margin-top: -42px;
-    margin-left: 0px;
-}
-
-.menu_desktop {
-    /*determina epaço das utilidades do menu*/
-    display: flex;
-    width: 100%;
-    height: 54px;
-}
-
-.menu_desktop ul {
-    /*determina o formato da lista*/
-    list-style: none;
-    margin-left: 500px;
-    margin-top: 30px;
-    /* white-space: nowrap; /*n deixa o menu desconfigurar*/
-    flex-direction: row;
-    /*Se eu tiro o nowrap, ele fica responsivo mas Quem somos quebra de linha. Se eu deixo, ele deixa de se ajustar*/
-    white-space: nowrap;
-    /*parece um position absolute*/
-    display: flex;
-}
-
-.menu_desktop ul li {
-    /*determina o formato da lista com base nas linhas e o tamanho das funcionalidades*/
-    display: inline-block;
-    padding-left: 24px;
-    position: relative;
-    font-size: 23px;
-}
-
-.menu_desktop ul li a {
-    /*determina a cor e tira as características padrões de links*/
-    text-decoration: none;
-    color: #eeeeee;
-}
-
-.menu_desktop ul li a:hover {
-    color: #c4953e;
-}
-
-.content__1 {
-    /*tamanho do content1*/
-    width: 100%;
-}
-
-.content__1-img {
-    /*determina o tamanho, proporção, posição e alinhamento dos itens que estão dentro do banner.*/
-    padding-top: 0px;
-    height: 600px;
-    background-image: url(assets/img/mountain-1149897_1920.jpg);
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: 1700px;
-    width: 100%;
-}
-
-.content__1-title1 {
-    /*padroniza o título 1 do banner-montanha*/
-    font-family: 'Barlow';
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    margin-top: 20px;
-}
-
-.content__1-title2 {
-    /*padroniza o título 2 do banner-montanha*/
-    font-family: 'Lobster', cursive;
-    color: rgb(255, 255, 255);
-    font-size: 70px;
-    margin-top: 77px;
-}
-
-.content__1-button {
-    /*determina a posição e as configurações estéticas do botão*/
-    position: absolute;
-    margin-top: 420px;
-    padding: 10px;
-    background-color: rgba(7, 70, 35, 0.87);
-    color: rgb(255, 255, 255);
-    border: 2px solid #bebebe;
-    font-size: 20px;
-}
-
-.content__1-button:hover {
-    /*muda a cor do botão quando passa o mouse em cima*/
-    color: #c4953e;
-    border: 2px solid #c4953e;
-}
-
-.content__2 {
-    /*define a cor e o alinhamento dos conteúdos, Semi-responsivo*/
-    width: 100%;
-    height: 420px;
-    background-color: rgb(15, 24, 6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.h2__content2 {
-    /*define os padrões dos títulos de cada conteúdo*/
-    font-family: 'Barlow Bold';
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin-top: -120px;
-    font-size: 40px;
-    margin-left: 110px;
-}
-
-.text_content2 {
-    /*define as coisas de "nossa história"*/
-    color: white;
-    font-size: 20px;
-    margin-right: -100px;
-}
-
-.read_more {
-    /*define estilo do botão read more*/
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 200px;
-    padding: 10px;
-    background-color: rgba(7, 70, 35, 0.87);
-    color: rgb(255, 255, 255);
-    border: 2px solid #bebebe;
-    font-size: 20px
-}
-
-.read_more:hover {
-    /*muda a cor do botão quando passa o mouse em cima*/
-    color: #c4953e;
-    border: 2px solid #c4953e;
-}
-
-.content__3 {
-    display: flex;
-    width: 100%;
-    margin-bottom: -5px;
-}
-
-.h2__content3 {
-    font-family: 'Barlow Bold';
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin-top: 40px;
-    font-size: 40px;
-    margin-left: 820px;
-}
-
-.fundo__content3 {
-    background-image: url(assets/img/bonito.jpg);
-    width: 100%;
-    height: 500px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-}
-
-.sobre__content3 {
-    background-image: url(assets/img/sale.png);
-    size: 100%;
-    width: 100%;
-    height: 350px;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    position: relative;
-    opacity: 90%;
-    display: flex;
-}
-
-
-/*PRA DEIXAR BONITO IGUAL TAVA NO CANVA TEM QUE COLOCAR UMA SPAN COM UM RETANGULO, DEFINIR A OPACITY E LANÇAR AS OUTRAS IMAGENS COM OS TEXTOS EM CIMA.
+    @font-face {
+        font-family: 'Barlow';
+        src: url('assets/fonts/Barlow-ExtraLight.ttf')
+    }
+    
+    @font-face {
+        font-family: 'Barlow Bold';
+        src: url('assets/fonts/Barlow-Bold.ttf')
+    }
+    
+    @font-face {
+        font-family: 'October Twilight';
+        src: url('assets/fonts/October-Twilight.ttf')
+    }
+    
+    @media screen and (min-width:1024px) {
+        /*teste nav*/
+        nav {
+            background-color: rgba(17, 68, 28, 0.685);
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            margin-top: 0px;
+            display: flex;
+        }
+        .menu1 {
+            margin-top: 33px;
+            margin-left: 600px;
+            display: block;
+        }
+        .menu1 a {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 20px;
+            font-size: 23px;
+            flex-direction: row;
+            white-space: nowrap;
+            display: inline;
+        }
+        .menu1 a label {
+            display: inline-block;
+            position: relative;
+            flex-shrink: inherit;
+        }
+        body {
+            /*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*/
+            font-family: 'Barlow';
+            background-color: #ffffff;
+            height: 2000px;
+            margin: 0px;
+        }
+        .menu {
+            /*padroniza o tamanho, alura, cor e posição do menu*/
+            width: 100%;
+            height: 100px;
+            background-color: rgba(3, 39, 8, 0.76);
+            position: absolute;
+            display: flex;
+        }
+        .menu_logo {
+            /*padroniza apenas as definições da escrita da logo*/
+            color: beige;
+            position: relative;
+            font-size: 25px;
+            margin-top: 68px;
+            margin-left: 150px;
+            font-family: 'Lora', serif;
+        }
+        .menu_img {
+            /*padroniza as definições da imagem da logo*/
+            background-image: url(assets/img/logobranca.png);
+            background-repeat: no-repeat;
+            background-size: 230px;
+            width: 750px;
+            height: 500px;
+            position: absolute;
+            margin-top: -42px;
+            margin-left: 0px;
+        }
+        .menu_desktop {
+            /*determina o tamanho da fonte e o tamanho das utilidades do menu*/
+            display: flex;
+            width: 100%;
+            height: 54px;
+            font-size: 23px;
+        }
+        .menu_desktop ul {
+            /*determina o formato da lista*/
+            list-style: none;
+            margin-left: 500px;
+            margin-top: 30px;
+            /* white-space: nowrap; /*n deixa o menu desconfigurar*/
+            flex-direction: row;
+            /*Se eu tiro o nowrap, ele fica responsivo mas Quem somos quebra de linha. Se eu deixo, ele deixa de se ajustar*/
+            white-space: nowrap;
+            /*parece um position absolute*/
+            display: flex;
+        }
+        .menu_desktop ul li {
+            /*determina o formato da lista com base nas linhas*/
+            display: inline-block;
+            padding-left: 24px;
+            position: relative;
+        }
+        .menu_desktop ul li a {
+            /*determina a cor e tira as características padrões de links*/
+            text-decoration: none;
+            color: #eeeeee;
+        }
+        .menu_desktop ul li a:hover {
+            color: #c4953e;
+        }
+        .content__1 {
+            /*tamanho do content1*/
+            width: 100%;
+        }
+        .content__1-img {
+            /*determina o tamanho, proporção, posição e alinhamento dos itens que estão dentro do banner.*/
+            padding-top: 0px;
+            height: 600px;
+            background-image: url(assets/img/mountain-1149897_1920.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-size: 1700px;
+            width: 100%;
+        }
+        .content__1-title1 {
+            /*padroniza o título 1 do banner-montanha*/
+            font-family: 'Barlow';
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        .content__1-title2 {
+            /*padroniza o título 2 do banner-montanha*/
+            font-family: 'Lobster', cursive;
+            color: rgb(255, 255, 255);
+            font-size: 70px;
+            margin-top: 77px;
+        }
+        .content__1-button {
+            /*determina a posição e as configurações estéticas do botão*/
+            position: absolute;
+            margin-top: 420px;
+            padding: 10px;
+            background-color: rgba(7, 70, 35, 0.87);
+            color: rgb(255, 255, 255);
+            border: 2px solid #bebebe;
+            font-size: 20px;
+        }
+        .content__1-button:hover {
+            /*muda a cor do botão quando passa o mouse em cima*/
+            color: #c4953e;
+            border: 2px solid #c4953e;
+        }
+        .content__2 {
+            /*define a cor e o alinhamento dos conteúdos, Semi-responsivo*/
+            width: 100%;
+            height: 420px;
+            background-color: rgb(15, 24, 6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .h2__content2 {
+            /*define os padrões dos títulos de cada conteúdo*/
+            font-family: 'Barlow Bold';
+            color: rgb(255, 255, 255);
+            position: relative;
+            margin-top: -120px;
+            font-size: 40px;
+            margin-left: 110px;
+        }
+        .text_content2 {
+            /*define as coisas de "nossa história"*/
+            color: white;
+            font-size: 20px;
+            margin-right: -100px;
+        }
+        .read_more {
+            /*define estilo do botão read more*/
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 200px;
+            padding: 10px;
+            background-color: rgba(7, 70, 35, 0.87);
+            color: rgb(255, 255, 255);
+            border: 2px solid #bebebe;
+            font-size: 20px
+        }
+        .read_more:hover {
+            /*muda a cor do botão quando passa o mouse em cima*/
+            color: #c4953e;
+            border: 2px solid #c4953e;
+        }
+        .content__3 {
+            display: flex;
+            width: 100%;
+            margin-bottom: -5px;
+        }
+        .h2__content3 {
+            font-family: 'Barlow Bold';
+            color: rgb(255, 255, 255);
+            position: relative;
+            margin-top: 40px;
+            font-size: 40px;
+            margin-left: 820px;
+        }
+        .fundo__content3 {
+            background-image: url(assets/img/bonito.jpg);
+            width: 100%;
+            height: 500px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+        }
+        .sobre__content3 {
+            background-image: url(assets/img/sale.png);
+            size: 100%;
+            width: 100%;
+            height: 350px;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            position: relative;
+            opacity: 90%;
+            display: flex;
+        }
+        /*PRA DEIXAR BONITO IGUAL TAVA NO CANVA TEM QUE COLOCAR UMA SPAN COM UM RETANGULO, DEFINIR A OPACITY E LANÇAR AS OUTRAS IMAGENS COM OS TEXTOS EM CIMA.
+*/
+        nav {
+            background-color: rgba(17, 68, 28, 0.685);
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            margin-top: 0px;
+            display: flex;
+        }
+        .menu1 {
+            margin-top: 33px;
+            margin-left: 600px;
+            display: block;
+        }
+        .menu1 a {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 20px;
+            font-size: 23px;
+            flex-direction: row;
+            white-space: nowrap;
+            display: inline;
+        }
+        .menu1 a label {
+            display: inline-block;
+            position: relative;
+            flex-shrink: inherit;
+        }
+        body {
+            /*padroniza a fonte do corpo, as margens, o tamanho e a cor dos elementos*/
+            font-family: 'Barlow';
+            background-color: #ffffff;
+            margin: 0px;
+        }
+        .menu {
+            /*padroniza o tamanho, alura, cor e posição do menu*/
+            width: 100%;
+            height: 100px;
+            background-color: rgba(3, 39, 8, 0.76);
+            position: absolute;
+            display: flex;
+        }
+        .menu_logo {
+            /*padroniza apenas as definições da escrita da logo*/
+            color: beige;
+            position: relative;
+            font-size: 25px;
+            margin-top: 68px;
+            margin-left: 150px;
+            font-family: 'Lora', serif;
+        }
+        .menu_img {
+            /*padroniza as definições da imagem da logo*/
+            background-image: url(assets/img/logobranca.png);
+            background-repeat: no-repeat;
+            background-size: 230px;
+            width: 750px;
+            height: 500px;
+            position: absolute;
+            margin-top: -42px;
+            margin-left: 0px;
+        }
+        .menu_desktop {
+            /*determina epaço das utilidades do menu*/
+            display: flex;
+            width: 100%;
+            height: 54px;
+        }
+        .menu_desktop ul {
+            /*determina o formato da lista*/
+            list-style: none;
+            margin-left: 500px;
+            margin-top: 30px;
+            /* white-space: nowrap; /*n deixa o menu desconfigurar*/
+            flex-direction: row;
+            /*Se eu tiro o nowrap, ele fica responsivo mas Quem somos quebra de linha. Se eu deixo, ele deixa de se ajustar*/
+            white-space: nowrap;
+            /*parece um position absolute*/
+            display: flex;
+        }
+        .menu_desktop ul li {
+            /*determina o formato da lista com base nas linhas e o tamanho das funcionalidades*/
+            display: inline-block;
+            padding-left: 24px;
+            position: relative;
+            font-size: 23px;
+        }
+        .menu_desktop ul li a {
+            /*determina a cor e tira as características padrões de links*/
+            text-decoration: none;
+            color: #eeeeee;
+        }
+        .menu_desktop ul li a:hover {
+            color: #c4953e;
+        }
+        .menu_destaque {
+            color: #c4953e;
+        }
+        .content__1 {
+            /*tamanho do content1*/
+            width: 100%;
+        }
+        .content__1-img {
+            /*determina o tamanho, proporção, posição e alinhamento dos itens que estão dentro do banner.*/
+            padding-top: 0px;
+            height: 600px;
+            background-image: url(assets/img/mountain-1149897_1920.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-size: 1700px;
+            width: 100%;
+        }
+        .content__1-title1 {
+            /*padroniza o título 1 do banner-montanha*/
+            font-family: 'Barlow';
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        .content__1-title2 {
+            /*padroniza o título 2 do banner-montanha*/
+            font-family: 'October Twilight';
+            color: rgb(255, 255, 255);
+            font-size: 70px;
+            margin-top: 77px;
+        }
+        .content__1-button {
+            /*determina a posição e as configurações estéticas do botão*/
+            position: absolute;
+            margin-top: 420px;
+            padding: 10px;
+            background-color: rgba(7, 70, 35, 0.87);
+            color: rgb(255, 255, 255);
+            border: 2px solid #bebebe;
+            font-size: 20px;
+        }
+        .content__1-button:hover {
+            /*muda a cor do botão quando passa o mouse em cima*/
+            color: #c4953e;
+            border: 2px solid #c4953e;
+        }
+        .content__2 {
+            /*define a cor e o alinhamento dos conteúdos, Semi-responsivo*/
+            width: 100%;
+            height: 420px;
+            background-color: rgb(15, 24, 6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .h2__content2 {
+            /*define os padrões dos títulos de cada conteúdo*/
+            font-family: 'Barlow Bold';
+            color: rgb(255, 255, 255);
+            position: relative;
+            margin-top: -120px;
+            font-size: 40px;
+            margin-left: 110px;
+        }
+        .text_content2 {
+            /*define as coisas de "nossa história"*/
+            color: white;
+            font-size: 20px;
+            margin-right: -100px;
+        }
+        .read_more {
+            /*define estilo do botão read more*/
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 200px;
+            padding: 10px;
+            background-color: rgba(7, 70, 35, 0.87);
+            color: rgb(255, 255, 255);
+            border: 2px solid #bebebe;
+            font-size: 20px
+        }
+        .read_more:hover {
+            /*muda a cor do botão quando passa o mouse em cima*/
+            color: #c4953e;
+            border: 2px solid #c4953e;
+        }
+        .content__3 {
+            display: flex;
+            width: 100%;
+            margin-bottom: -5px;
+        }
+        .h2__content3 {
+            font-family: 'Barlow Bold';
+            color: rgb(255, 255, 255);
+            position: relative;
+            margin-top: 40px;
+            font-size: 40px;
+            margin-left: 820px;
+        }
+        .fundo__content3 {
+            background-image: url(assets/img/bonito.jpg);
+            width: 100%;
+            height: 500px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+        }
+        .sobre__content3 {
+            background-image: url(assets/img/sale.png);
+            size: 100%;
+            width: 100%;
+            height: 350px;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            position: relative;
+            opacity: 90%;
+            display: flex;
+        }
+        /*PRA DEIXAR BONITO IGUAL TAVA NO CANVA TEM QUE COLOCAR UMA SPAN COM UM RETANGULO, DEFINIR A OPACITY E LANÇAR AS OUTRAS IMAGENS COM OS TEXTOS EM CIMA.
+>>>>>>> Stashed changes
     falta arrumar as responsividades das imagens e das divs
     */
-
-
-/* CASSOL */
-
-.rodape {
-    width: 100%;
-    height: 250px;
-    background-color: rgba(1, 17, 3);
-}
-
-#divlogorodape {
-    float: left;
-    height: 300px;
-    width: 200px;
-    margin-right: 40px;
-    background-image: url(assets/img/logobranca.png);
-    background-repeat: no-repeat;
-    background-size: 250px;
-}
-
-.rodape_items_1 {
-    float: left;
-    margin-top: 15px;
-    margin-left: 4%;
-}
-
-#rodape_separador {
-    margin-top: 25%;
-    margin-left: -40px;
-    float: left;
-    background-color: #eeeeee;
-    border-radius: 3px;
-    height: 20px;
-    width: 3px;
-}
-
-#rodapeinfo {
-    margin-left: -40px;
-    text-decoration: none;
-    margin-top: 3%;
-    color: #eeeeee;
-    float: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.listainfo {
-    list-style: none;
-    outline: none;
-    text-decoration: none;
-    line-height: 1.6;
-}
-
-.li_listainfo {
-    color: #eeeeee;
-    text-decoration: none;
-}
-
-.li_listainfo:hover {
-    color: #c4953e;
-}
-
-.rodape_items_2 {
-    float: left;
-    margin-left: 100px;
-}
-
-.rodape_contato {
-    margin-top: 5%;
-    color: #eeeeee;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    float: left;
-    margin-right: 75px;
-}
-
-.rodape_social {
-    margin-top: 5%;
-    color: #eeeeee;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    float: left;
-}
-
-#mapa {
-    float: left;
-}
-
-.li_contato {
-    list-style: none;
-    line-height: 1.7;
-}
-
-.redes_sociais {
-    float: left;
-    margin-left: 30px;
-}
-
-#twitter {
-    float: left;
-    margin-right: 20px;
-    height: 32px;
-    width: 32px;
-    background-image: url(assets/img/twitter_quentao.png);
-    background-size: 32px;
-}
-
-#twitter:hover {
-    float: left;
-    height: 32px;
-    width: 32px;
-    background-image: url(assets/img/twitter.png);
-    background-size: 32px;
-}
-
-#instragram {
-    margin-right: 20px;
-    float: left;
-    height: 32px;
-    width: 32px;
-    background-image: url(assets/img/instagram_quentao.png);
-}
-
-#instragram:hover {
-    background-image: url(assets/img/instagram.png);
-}
-
-#youtube {
-    float: left;
-    height: 32px;
-    width: 32px;
-    background-image: url(assets/img/youtube_quentao.png);
-}
-
-#youtube:hover {
-    background-image: url(assets/img/youtube.png);
-}
-
-
-}
-
-/*TESTE*/
-
-/* GERAIS */
-body {
-    font-family: 'Roboto', sans-serif;
-}
-.row {
-    margin: 0;
-}
-.container {
-    padding: 70px 0;
-}
-p,
-li {
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-}
-
-/* Barra de navegação */
-header,
-.navbar {
-    background-color: #353D41;
-}
-#nav-container {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-#logo {
-    width: 125px;
-    position: absolute;
-    margin-top: -50px;
-    margin-left: -20px;
-}
-.escrita {
-    position: absolute;
-    margin-left: 70px;
-    margin-top: -10px;
-}
-.navbar-brand {
-    padding: 0;
-    color: white;
-}
-.navbar-brand:hover {
-    color: white;
-}
-#navbar-links a {
-    color: white;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 1rem .8rem;
-    /*elemento root*/
-}
-.tamanho {
-    width: 100%;
-    height: auto;
-    background-size: 100%;
-}
-
-/*SLIDER*/
-.container-fluid {
-    padding: 0;
-}
-#mainSlider .carousel-caption {
-    top: 30%;
-}
-#mainSlider .carousel-caption h2 {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-#mainSlider .carousel-caption p {
-    font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 6%;
-    color: aliceblue;
-}
-#main-btn {
-    /*Definições dos botões do slider*/
+        /* CASSOL */
+        .rodape {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(1, 17, 3);
+        }
+        #divlogorodape {
+            float: left;
+            height: 300px;
+            width: 200px;
+            margin-right: 40px;
+            background-image: url(assets/img/logobranca.png);
+            background-repeat: no-repeat;
+            background-size: 250px;
+        }
+        .rodape_items_1 {
+            float: left;
+            margin-top: 15px;
+            margin-left: 4%;
+        }
+        #rodape_separador {
+            margin-top: 25%;
+            margin-left: -40px;
+            float: left;
+            background-color: #eeeeee;
+            border-radius: 3px;
+            height: 20px;
+            width: 3px;
+        }
+        #rodapeinfo {
+            margin-left: -40px;
+            text-decoration: none;
+            margin-top: 3%;
+            color: #eeeeee;
+            float: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .listainfo {
+            list-style: none;
+            outline: none;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+        .li_listainfo {
+            color: #eeeeee;
+            text-decoration: none;
+        }
+        .li_listainfo:hover {
+            color: #c4953e;
+        }
+        .rodape_items_2 {
+            float: left;
+            margin-left: 100px;
+        }
+        .rodape_contato {
+            margin-top: 5%;
+            color: #eeeeee;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: left;
+            margin-right: 75px;
+        }
+        .rodape_social {
+            margin-top: 5%;
+            color: #eeeeee;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: left;
+        }
+        #mapa {
+            float: left;
+        }
+        .li_contato {
+            list-style: none;
+            line-height: 1.7;
+        }
+        .redes_sociais {
+            float: left;
+            margin-left: 30px;
+        }
+        #twitter {
+            float: left;
+            margin-right: 20px;
+            height: 32px;
+            width: 32px;
+            background-image: url(assets/img/twitter_quentao.png);
+            background-size: 32px;
+        }
+        #twitter:hover {
+            float: left;
+            height: 32px;
+            width: 32px;
+            background-image: url(assets/img/twitter.png);
+            background-size: 32px;
+        }
+        #instragram {
+            margin-right: 20px;
+            float: left;
+            height: 32px;
+            width: 32px;
+            background-image: url(assets/img/instagram_quentao.png);
+        }
+        #instragram:hover {
+            background-image: url(assets/img/instagram.png);
+        }
+        #youtube {
+            float: left;
+            height: 32px;
+            width: 32px;
+            background-image: url(assets/img/youtube_quentao.png);
+        }
+        #youtube:hover {
+            background-image: url(assets/img/youtube.png);
+        }
+    }
+    /*TESTE*/
+    /* GERAIS */
     
-    background-color: rgba(27, 56, 27, 0.959);
-    color: rgb(250, 250, 250);
-    text-transform: uppercase;
-    width: 200px;
-    height: 60px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: 3px solid transparent;
-    transition: .5s;
-}
-#main-btn:hover {
-    /*Hover do botão do slider*/
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
     
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #c4953e;
-    border-color: rgb(255, 255, 255);
-}
-.testecor {
-    background-color: rgba(18, 49, 6, 0.452);
-}
-.testecor2 {
-    background-color: rgba(11, 66, 68, 0.541);
-}
-.testecor3 {
-    background-color: rgba(4, 66, 53, 0.575);
-}
+    .row {
+        margin: 0;
+    }
+    
+    .container {
+        padding: 70px 0;
+    }
+    
+    p,
+    li {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+    }
+    /* Barra de navegação */
+    
+    header,
+    .navbar {
+        background-color: #353D41;
+    }
+    
+    #nav-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    #logo {
+        width: 125px;
+        position: absolute;
+        margin-top: -50px;
+        margin-left: -20px;
+    }
+    
+    .escrita {
+        position: absolute;
+        margin-left: 70px;
+        margin-top: -10px;
+    }
+    
+    .navbar-brand {
+        padding: 0;
+        color: white;
+    }
+    
+    .navbar-brand:hover {
+        color: white;
+    }
+    
+    #navbar-links a {
+        color: white;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 1rem .8rem;
+        /*elemento root*/
+    }
+    
+    .tamanho {
+        width: 100%;
+        height: auto;
+        background-size: 100%;
+    }
+    /*SLIDER*/
+    
+    .container-fluid {
+        padding: 0;
+    }
+    
+    #mainSlider .carousel-caption {
+        top: 30%;
+    }
+    
+    #mainSlider .carousel-caption h2 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    
+    #mainSlider .carousel-caption p {
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 6%;
+        color: aliceblue;
+    }
+    
+    #main-btn {
+        /*Definições dos botões do slider*/
+        background-color: rgba(27, 56, 27, 0.959);
+        color: rgb(250, 250, 250);
+        text-transform: uppercase;
+        width: 200px;
+        height: 60px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: 3px solid transparent;
+        transition: .5s;
+    }
+    
+    #main-btn:hover {
+        /*Hover do botão do slider*/
+        text-decoration: none;
+        color: #e9cc97;
+        background-color: rgba(40, 82, 40, 0.541);
+        border-color: rgb(41, 80, 39);
+    }
+    
+    .testecor {
+        background-color: rgba(18, 49, 6, 0.452);
+    }
+    
+    .testecor2 {
+        background-color: rgba(11, 66, 68, 0.541);
+    }
+    
+    .testecor3 {
+        background-color: rgba(4, 66, 53, 0.575);
+    }
