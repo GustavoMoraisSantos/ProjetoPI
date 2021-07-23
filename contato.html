@@ -28,25 +28,52 @@
 
 
     <section class="menu">
-        <!--CSS da section menu é o mesmo da página index-->
-        <!--menu fixo com logo, home, about, destinations, login linkando pra entrar com face ou google -->
 
-        <div class="menu_logo">way!</div>
-
-        <div class="menu_img"></div>
-
-        <div class="menu_desktop">
+        <div class="menu__desktop">
+            <div>
+                <img class="logo_branca" src="assets/img/logobranca.png" alt="logo Way">
+                <span class="escrita_logo">way!</span>
+            </div>
             <ul class="menu_list">
-                <li><a href="index.html"><strong>Início</strong></a></li>
-                <li><a href="sobre_nos.html"><strong>Sobre nós</strong></a></li>
-                <li><a href="destinos.html"><strong>Destinos</strong></a></li>
-                <li><a href="contato.html"><strong class="menu_destaque">Contatos</strong></a></li>
-                <li><a href="login.html"><strong>Login</strong></a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre_nos.html">Sobre nós</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="contato.html"><strong style="color: rgb(216, 155, 22);">Contato</strong></a></li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
             </ul>
+
         </div>
 
+        <div class="menu__mobile">
+            <div><img src="./assets/img/agoravai.png" alt="logoMenu"></div>
+            <div>
+                <button onclick="openDropDownMobile()" class="menu__button">
+                    <img src="./assets/img/button-menu-mobile.svg" alt="mobileMenu">
+                </button>
+            </div>
+        </div>
+        <div id="dropdown-mobile" class="menu__dropdown-mobile--hidden">
+            <a href="index.html">
+                <div>Início</div>
+            </a>
+            <a href="sobre_nos.html">
+                <div>Sobre nós</div>
+            </a>
+            <a href="destinos.html">
+                <div>Destinos</div>
+            </a>
+            <a href="contato.html">
+                <strong> <div>Contato</div></strong>
+            </a>
+            <a href="login.html">
+                <div>Login</div>
+            </a>
 
-
+        </div>
     </section>
-
+    <script src="./scripts/index.js"></script>
 </body>
+
+</html>
