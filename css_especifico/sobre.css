@@ -1,3 +1,41 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('./assets/fonts/Barlow-ExtraLight.ttf')
+}
+
+@font-face {
+    font-family: 'Barlow Bold';
+    src: url('./assets/fonts/Barlow-Bold.ttf')
+}
+
+body {
+    background-color: rgb(58, 97, 74);
+}
+
 .menu_destaque {
     color: rgb(133, 123, 32);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.titulo {
+    margin-left: 12%;
+    margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.texto {
+    margin-left: 12%;
+    font-size: 1.2rem;
+    font-family: 'Barlow Bold';
+    color: rgb(235, 235, 235);
 }
