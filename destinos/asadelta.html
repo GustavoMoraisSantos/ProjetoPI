@@ -52,27 +52,27 @@
         </div>
 
         <div class="menu__mobile">
-            <div><img src="./assets/img/agoravai.png" alt="logoMenu"></div>
+            <div><img src="../assets/img/agoravai.png" alt="logoMenu"></div>
             <div>
                 <button onclick="openDropDownMobile()" class="menu__button">
-                    <img src="./assets/img/button-menu-mobile.svg" alt="mobileMenu">
+                    <img src="../assets/img/button-menu-mobile.svg" alt="mobileMenu">
                 </button>
             </div>
         </div>
         <div id="dropdown-mobile" class="menu__dropdown-mobile--hidden">
-            <a href="index.html">
+            <a href="../index.html">
                 <div>Início</div>
             </a>
-            <a href="sobre_nos.html">
+            <a href="../sobre_nos.html">
                 <div>Sobre nós</div>
             </a>
-            <a href="destinos.html">
+            <a href="../destinos.html">
                 <strong><div>Destinos</div></strong>
             </a>
-            <a href="contato.html">
+            <a href="../contato.html">
                 <div>Contato</div>
             </a>
-            <a href="login.html">
+            <a href="../login.html">
                 <div>Login</div>
             </a>
 
@@ -80,19 +80,19 @@
     </section>
 
     <section>
-        <h3 style="margin-left: 43%; padding: 1rem;">Aqui é o asa delta</h3>
+        <h3 class="col-12 text-center">Aqui é o asa delta </h3>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2">
+                <div class="col-sm-2 col-1">
 
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4 col-10">
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, quae est. Amet magni dolores id, totam, dolore sit consequuntur, perspiciatis soluta ipsa illo quibusdam saepe tempore harum sunt perferendis illum! Lorem ipsum dolor
                         sit amet consectetur adipisicing elit. Eaque quaerat eius doloribus omnis labore laudantium, beatae quo possimus repellat blanditiis suscipit voluptas, nostrum rem nobis, quibusdam vitae impedit fugiat adipisci.
                     </p>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-6 col-12 ml-5 ml-lg-0">
                     <img src="../assets/img/asadelta.jpg" alt="">
                 </div>
 
@@ -100,20 +100,67 @@
 
         </div>
 
-        </div>
-    </section>
 
+    </section>
+    <section class="form">
+        <form class="ml-5 mr-5">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Endereço 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEstado">Estado</label>
+                    <select id="inputEstado" class="form-control">
+                  <option selected>Escolher...</option>
+                  <option>...</option>
+                </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputCEP">CEP</label>
+                    <input type="text" class="form-control" id="inputCEP">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                  Clique em mim
+                </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+    </section>
 
 
     <!--FOOTER-->
 
     <section>
-        <footer style="background-color:red; color:wheat; margin-top: 50vh;">
+        <footer style="background-color:red; color:wheat; margin-top: 30vh;">
             Aqui é o footer do cassol @@@@@@@@@@@@@@@@@@@@
         </footer>
     </section>
 
-    <script src="./scripts/index.js"></script>
+    <script src="../scripts/index.js"></script>
 </body>
 
 </html>
