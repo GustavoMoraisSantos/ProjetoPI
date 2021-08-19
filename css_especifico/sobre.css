@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -20,9 +22,17 @@ body {
     color: rgb(133, 123, 32);
 }
 
-img {
+.img {
     width: 100%;
     height: auto;
+    margin-left: 27px;
+}
+
+@media (max-width: 668px) {
+    .img {
+        width: 100%;
+        margin-left: 14px;
+    }
 }
 
 .titulo {
@@ -38,4 +48,13 @@ img {
     font-size: 1.2rem;
     font-family: 'Barlow Bold';
     color: rgb(235, 235, 235);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:link {
+    text-decoration: none;
 }

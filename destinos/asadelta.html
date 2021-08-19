@@ -22,8 +22,67 @@
     <link rel="stylesheet" href="../style.css">
     <!--css específico-->
     <style>
-        img {
-            width: 70%;
+        @media (max-width: 668px) {
+            .img {
+                width: 15rem !important;
+                margin-left: 1.5rem !important;
+                margin-top: 10px !important;
+            }
+            h2 {
+                font-size: 25px;
+            }
+            .preform {
+                width: 100%;
+                margin-left: 10%;
+            }
+            .p {
+                font-size: 18px !important;
+                margin-left: 39px;
+            }
+        }
+        
+        .img {
+            width: 23rem;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        
+        .img2 {
+            width: 23rem;
+            margin-top: 0px;
+        }
+        
+        .alinhamento {
+            font-family: 'Barlow Bold' !important;
+            color: #FFFFFF;
+            background-color: rgba(7, 70, 35, 0.87);
+            border: 2px solid #bebebe;
+            padding: 10px 90px;
+            font-size: 17px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        
+        .alinhamento:hover {
+            text-decoration: none;
+            color: #c4953e;
+            border: 2px solid #c4953e;
+            background-color: rgba(7, 70, 35, 0.87);
+        }
+        
+        .form {
+            color: white;
+            margin-top: 15px;
+        }
+        
+        .p {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        @font-face {
+            font-family: 'October Twilight';
+            src: url('../assets/fonts/October-Twilight.ttf')
         }
     </style>
 
@@ -46,7 +105,7 @@
                 <li><a href="../sobre_nos.html">Sobre nós</a></li>
                 <li><a href="../destinos.html"><strong style="color: rgb(216, 155, 22);"> Destinos</strong></a></li>
                 <li><a href="../contato.html">Contato</a></li>
-                <li><a href="../login.html">Login</a></li>
+
             </ul>
 
         </div>
@@ -72,29 +131,32 @@
             <a href="../contato.html">
                 <div>Contato</div>
             </a>
-            <a href="../login.html">
-                <div>Login</div>
-            </a>
+
 
         </div>
     </section>
 
     <section>
-        <h3 class="col-12 text-center">Aqui é o asa delta </h3>
+
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-2 col-1">
+            <div class="row" style="width: 100%;">
+
+                <div class="col-sm-2 col-2">
 
                 </div>
-                <div class="col-sm-4 col-10">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, quae est. Amet magni dolores id, totam, dolore sit consequuntur, perspiciatis soluta ipsa illo quibusdam saepe tempore harum sunt perferendis illum! Lorem ipsum dolor
+                <div class="col-sm-4 col-10" style="margin-top: 10px;">
+                    <h1 class="col-7 text-center" style="font-family: October Twilight; margin-top: 30px; margin-left: 50px;">
+                        Asadelta
+                    </h1>
+                    <p style="margin-top: 40px; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, quae est. Amet magni dolores id, totam, dolore sit consequuntur, perspiciatis soluta ipsa illo quibusdam saepe tempore harum sunt perferendis illum! Lorem ipsum dolor
                         sit amet consectetur adipisicing elit. Eaque quaerat eius doloribus omnis labore laudantium, beatae quo possimus repellat blanditiis suscipit voluptas, nostrum rem nobis, quibusdam vitae impedit fugiat adipisci.
                     </p>
                 </div>
-                <div class="col-sm-6 col-12 ml-5 ml-lg-0">
-                    <img src="../assets/img/asadelta.jpg" alt="">
+                <div class="col-sm-6 col-11 ml-5 ml-lg-0">
+                    <img class="img" src="../assets/img/asadelta.png" alt="">
+
                 </div>
+
 
             </div>
 
@@ -102,65 +164,86 @@
 
 
     </section>
-    <section class="form">
-        <form class="ml-5 mr-5">
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-                </div>
+
+
+
+    <div class="container-fluid " style="background-color: rgb(11, 20, 10); color: white; margin-top: 15px;">
+        <div class="row" style="width: 100%;">
+            <div class="col-12 d-flex justify-content-center">
+                <h2>Pronto para se aventurar?</h2>
             </div>
-            <div class="form-group">
-                <label for="inputAddress">Endereço</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+            <div class="col-12 d-flex justify-content-center">
+                <img class="preform" src="../assets/img/sale.png" width="400px" alt="">
             </div>
-            <div class="form-group">
-                <label for="inputAddress2">Endereço 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="p d-flex justify-content-center ">Para sair da rotina é simples, basta preencher os campos que entraremos em contato em breve, fique atento!</p>
             </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">Cidade</label>
-                    <input type="text" class="form-control" id="inputCity">
+        </div>
+    </div>
+
+
+    <div style="background-color: rgb(52, 87, 43); margin-top: -25px; ">
+
+        <section class="form d-flex justify-content-center ">
+
+
+            <form class="ml-5 mr-5 ">
+                <div class="form-row ">
+                    <div class="form-group col-md-6 ">
+                        <label for="inputEmail4 ">Email</label>
+                        <input type="email " class="form-control " id="inputEmail4 " placeholder="Email ">
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <label for="inputPassword4 ">Senha</label>
+                        <input type="password " class="form-control " id="inputPassword4 " placeholder="Senha ">
+                    </div>
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="inputEstado">Estado</label>
-                    <select id="inputEstado" class="form-control">
-                  <option selected>Escolher...</option>
-                  <option>...</option>
-                </select>
+                <div class="form-group ">
+                    <label for="inputAddress ">Endereço</label>
+                    <input type="text " class="form-control " id="inputAddress " placeholder="Rua dos Bobos, nº 0 ">
                 </div>
-                <div class="form-group col-md-2">
-                    <label for="inputCEP">CEP</label>
-                    <input type="text" class="form-control" id="inputCEP">
+                <div class="form-group ">
+                    <label for="inputAddress2 ">Endereço 2</label>
+                    <input type="text " class="form-control " id="inputAddress2 " placeholder="Apartamento, hotel, casa, etc. ">
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                  Clique em mim
-                </label>
+                <div class="form-row ">
+                    <div class="form-group col-md-6 ">
+                        <label for="inputCity ">Cidade</label>
+                        <input type="text " class="form-control " id="inputCity ">
+                    </div>
+                    <div class="form-group col-md-4 ">
+                        <label for="inputEstado ">Estado</label>
+                        <select id="inputEstado " class="form-control ">
+                      <option selected>Escolher...</option>
+                      <option>...</option>
+                    </select>
+                    </div>
+                    <div class="form-group col-md-2 ">
+                        <label for="inputCEP ">CEP</label>
+                        <input type="text " class="form-control " id="inputCEP ">
+                    </div>
+
                 </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
-        </form>
-    </section>
+                <button type="submit " class="alinhamento ">Entrar em contato</button>
+            </form>
+        </section>
+
+        <div id="validando " style="background-color: seagreen; ">
+            <span id='confirm'></span>
+        </div>
+    </div>
 
 
     <!--FOOTER-->
 
     <section>
-        <footer style="background-color:red; color:wheat; margin-top: 30vh;">
+        <footer style="background-color:red; color:wheat;  ">
             Aqui é o footer do cassol @@@@@@@@@@@@@@@@@@@@
         </footer>
     </section>
 
-    <script src="../scripts/index.js"></script>
+    <script src="../scripts/index.js "></script>
+    <script src="../scripts/destinos.js "></script>
 </body>
 
 </html>

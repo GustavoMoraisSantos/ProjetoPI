@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(92, 143, 105);
+    background-color: #E5E5E5;
     height: 100vh;
 }
 
@@ -42,7 +42,7 @@ figure img {
 }
 
 .polaroid:hover {
-    background-color: rgb(253, 239, 170);
+    background-color: rgb(241, 241, 241);
     color: rgb(0, 0, 0);
     -webkit-transform: scale(1.1);
     /*Faz com que aumente a escala quando passa o mouse em cima*/
