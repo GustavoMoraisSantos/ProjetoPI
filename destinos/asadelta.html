@@ -186,12 +186,62 @@
     <div style="background-color: rgb(86, 94, 54); margin-top: -25px; ">
 
         <section class="form d-flex justify-content-center ">
-
-
-            <form class="ml-5 mr-5 ">
+            <form class="ml-5 mr-5" name="frm">
                 <div class="form-row ">
                     <div class="form-group col-md-12 ">
                         <label for="nome ">Nome</label>
+                        <input type="text " class="form-control " name="nome" id="nome " placeholder="Nome completo ">
+                    </div>
+                    <div class="form-group col-md-12 ">
+                        <label for="email ">Email</label>
+                        <input type="email " name="email" class="form-control " id="email " placeholder="Email ">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="endereco ">Endereço</label>
+                    <input type="text " class="form-control" name="endereco" id="endereco " placeholder="Rua, nº 0 ">
+                </div>
+                <div class="form-row ">
+                    <div class="form-group col-md-6 ">
+                        <label for="cidade ">Cidade</label>
+                        <input type="text " class="form-control " name="cidade" id="cidade ">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="cep ">CEP</label>
+                        <input type="text " class="form-control " name="cep" id="cep ">
+                    </div>
+
+                </div>
+
+                <div class="form-row ">
+                    <div class="form-group col-md-6 ">
+                        <label for="inputCity ">Telefone</label>
+                        <input type="text" name="telefone" placeholder="(00) 0000-0000 " class="form-control " id="inputCity ">
+                    </div>
+
+                    <div class="form-group col-md-6 ">
+                        <label for="inputCEP ">Celular</label>
+                        <input type="text" name="celular" placeholder="(00) 0 0000-0000 " class="form-control " id="inputCEP ">
+                    </div>
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="notificacao" type="checkbox" value="" id="check">
+                    <label class="form-check-label" for="chack">
+                      Desejo receber notificações de ofertas!
+                    </label>
+                </div>
+                <button type="submit " onclick="validaForm()" class="alinhamento">Entrar em contato</button>
+
+            </form>
+
+
+
+            <!-- <form name="frm" method="POST" class="ml-5 mr-5 ">
+                <div class="form-row ">
+                    <div class="form-group col-md-12 ">
+                        <label for="nome">Nome</label>
                         <input type="text" class="form-control " name="nome" id="nome " placeholder="Nome completo ">
                     </div>
                     <div class="form-group col-md-12 ">
@@ -202,23 +252,16 @@
                 </div>
                 <div class="form-group ">
                     <label for="endereco ">Endereço</label>
-                    <input type="text " class="form-control " name="endereco" id="endereco " placeholder="Rua dos Bobos, nº 0 ">
+                    <input type="text " class="form-control" name="endereco" id="endereco " placeholder="Rua dos Bobos, nº 0 ">
                 </div>
 
                 <div class="form-row ">
-                    <div class="form-group col-md-4 ">
+                    <div class="form-group col-md-6 ">
                         <label for="cidade ">Cidade</label>
                         <input type="text " class="form-control " name="cidade" id="cidade ">
                     </div>
-                    <div class="form-group col-md-4 ">
-                        <label for="estado ">Estado</label>
-                        <select id="estado " name="estado" class="form-control ">
-                      <option selected>Escolher...</option>
-                      <option value="PR">PR</option>
-                      <option value="SP">SP</option>
-                    </select>
-                    </div>
-                    <div class="form-group col-md-4 ">
+
+                    <div class="form-group col-md-6">
                         <label for="cep ">CEP</label>
                         <input type="text " class="form-control " name="cep" id="cep ">
                     </div>
@@ -227,23 +270,23 @@
                 <div class="form-row ">
                     <div class="form-group col-md-6 ">
                         <label for="inputCity ">Telefone</label>
-                        <input type="text " placeholder="(00) 0000-0000" class="form-control " id="inputCity ">
+                        <input type="text" name="tel" placeholder="(00) 0000-0000" class="form-control " id="inputCity ">
                     </div>
 
                     <div class="form-group col-md-6 ">
                         <label for="inputCEP ">Celular</label>
-                        <input type="text " placeholder="(00) 0 0000-0000" class="form-control " id="inputCEP ">
+                        <input type="text " name="cel" placeholder="(00) 0 0000-0000" class="form-control " id="inputCEP ">
                     </div>
 
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check">
+                    <input class="form-check-input" type="checkbox" name="notificacao" value="" id="check">
                     <label class="form-check-label" for="chack">
                       Desejo receber notificações de ofertas!
                     </label>
                 </div>
-                <button type="submit " class="alinhamento ">Entrar em contato</button>
-            </form>
+                <button type="submit " class="alinhamento" onclick="validaForm()">Entrar em contato</button>
+            </form> -->
         </section>
 
         <div id="validando " style="background-color: seagreen; ">
@@ -316,7 +359,47 @@
         </footer>
     </section>
     <script src="../scripts/index.js "></script>
-    <script src="../scripts/destinos.js "></script>
+    <script>
+        function validaForm() {
+            console.log('Cheguei até aqui')
+            const nome = frm.nome.value
+            const email = frm.email.value
+            const endereco = frm.endereco.value
+            const cidade = frm.cidade.value
+            const CEP = frm.cep.value
+            const tel = frm.telefone.value
+            const cel = frm.celular.value
+            const notif = frm.notificacao.value
+            let usuario = email.substring(0, email.indexOf("@"))
+            let dominio = email.substring(email.indexOf("@") + 1, email.length)
+
+            if (nome === "" || nome === null) {
+                alert('Nome não informado')
+                frm.nome.focus()
+            } else
+            if (!((usuario.length >= 1) &&
+                    (dominio.length >= 3) &&
+                    (usuario.search("@") == -1) &&
+                    (dominio.search("@") == -1) &&
+                    (usuario.search(" ") == -1) &&
+                    (dominio.search(" ") == -1) &&
+                    (dominio.search(".") != -1) &&
+                    (dominio.indexOf(".") >= 1) &&
+                    (dominio.lastIndexOf(".") < dominio.length - 1))) {
+                alert('email inválido')
+                frm.email.focus()
+            } else
+            if (endereco === '' || endereco === null) {
+                alert('Digite seu endereço')
+                frm.endereco.focus()
+            } else
+            if (tel === "" && cel === "") {
+                alert('Digite pelo menos um número para contato')
+            } else {
+                alert("Olá, " + nome + "! Recebemos seu recado, responderemos em breve!")
+            }
+        }
+    </script>
 </body>
 
 </html>
